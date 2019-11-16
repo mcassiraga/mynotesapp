@@ -1,0 +1,20 @@
+nav {
+    margin-bottom: 30px
+}
+
+.save-btn {
+    float: right
+}
+
+.card {
+    .tab {
+        a {
+            color:#80cbc4;
+            cursor: pointer;
+            
+            &:hover {
+                color:#26a69a 
+            }
+        }
+    }
+}
