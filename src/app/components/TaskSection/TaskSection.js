@@ -8,8 +8,8 @@ const TaskSection = ({taskList, editTask, deleteTask}) => {
                             <div className="col s12 m6 l4" key={i}>
                                 <div className="card teal">
                                     <div className="card-content">
-                                        <span className="white-text">{e.title}</span>
-                                         <p className="white-text">{e.description}</p>
+                                        <span className="white-text task-title">{e.title}</span>
+                                        <p className="white-text">{e.description}</p>
                                     </div>
                                      <div className="card-tabs">
                                         <ul className="tabs tabs-fixed-width">

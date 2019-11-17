@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Form = ({saveTask, handleChange, title, description}) => {
+const Form = ({validateData, handleChange, title, description}) => {
     return (
         <div className="row">
-            <form className="col s12" onSubmit={e => saveTask(e)}>
+            <form className="col s12" onSubmit={e => validateData(e)}>
                 <div className="row">
                     <div className="input-field col s12">
                         <textarea name="title" value={title} id="title" className="materialize-textarea" onChange={e => handleChange(e)}></textarea>

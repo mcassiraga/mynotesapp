@@ -7,6 +7,15 @@ nav {
 }
 
 .card {
+    .task-title {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .card-content {
+        font-weight: lighter
+    }
+
     .tab {
         a {
             color:#80cbc4;

@@ -25,6 +25,10 @@ class App extends Component {
             .then(res => this.setState({taskList: res.taskList}))
     }
 
+    validateData = e => {
+        e.preventDefault()
+        this.state.description.length === 0 ? M.toast({html: 'Error: description cannot be empty'}) : this.saveTask(e)
+    }
 
     saveTask = e => {
         e.preventDefault()
@@ -98,7 +102,7 @@ class App extends Component {
             <React.Fragment>
                 <Nav />
                 <div className="container">
-                    <Form saveTask={this.saveTask} handleChange={this.handleChange} title={this.state.title} description={this.state.description} />
+                    <Form validateData={this.validateData} handleChange={this.handleChange} title={this.state.title} description={this.state.description} />
                     <TaskSection taskList={this.state.taskList} editTask={this.editTask} deleteTask={this.deleteTask}/>
                 </div>
             </React.Fragment>
